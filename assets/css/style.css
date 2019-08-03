@@ -195,13 +195,14 @@ a {
       color: lightgray;
   }
  
-  .button:hover, .project:hover {
+  h3:hover {
 
     background: #4CC2A5;
 
+
   }
 
-  .button:focus .project:focus {
+  h3:focus {
 
     background: #1E573E
     
@@ -220,6 +221,21 @@ a {
     border-style: outset;
     border-width: 1px;
 
+  }
+
+
+@keyframes example {
+    from {background-color: #1E573E;}
+    to {background-color: #4aaaa5;}
+  }
+  
+ 
+  h1 {
+    width: 300px;
+    height: 85px;
+    background-color: #4aaaa5;
+    animation-name: example;
+    animation-duration: 4s;
   }
 
   @media screen and (max-width: 980px){
